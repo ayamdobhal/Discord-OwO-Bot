@@ -365,7 +365,7 @@ exports.getUniqueName = function (user) {
 	if (user.discriminator && user.discriminator !== '0') {
 		return `${user.username}#${user.discriminator}`;
 	} else {
-		return `${user.username}`;
+		return `@${user.username}`;
 	}
 };
 
