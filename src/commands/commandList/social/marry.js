@@ -148,9 +148,9 @@ async function propose(p, user, ringId) {
 			{
 				name: 'Once you have accepted, you will receive an extra lootbox or weapon crate when you both complete your daily!',
 				value:
-					'`owo am` to accept  |  `owo dm` to decline\nYou can divorce anytime with `owo divorce` or upgrade your marriage ring with `owo marry @' +
+					('`owo am` to accept  |  `owo dm` to decline\nYou can divorce anytime with `owo divorce` or upgrade your marriage ring with `owo marry @' +
 					p.getUniqueName(user) +
-					' {ringID}`',
+					' {ringID}`').replaceAll('@@', '@'),
 			},
 		],
 		color: p.config.embed_color,
